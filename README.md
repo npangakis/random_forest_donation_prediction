@@ -1,2 +1,7 @@
-# random_forest_donation_prediction
-Who Donates? Using Machine Learning to Predict Federal Donation Behavior
+## Who Donates? Using Machine Learning to Predict Federal Donation Behavior
+
+Campaign contributions are an important facet of political behavior that affects who gets elected and what types of policy are implemented. Can we predict who will donate money to a political campaign? The primary goal of this project is to use machine learning to predict federal campaign contribution behavior in the United States. First, I implement LASSO logistic regression as a baseline model. Second, I implement random forest. Across both methods, the target variable is a binary indicator for whether an individual donated money to a federal political campaign in 2020. The data for my analysis merges federal campaign contribution data, Pennsylvania voting records, governmental socio-demographic county data, and 2016 U.S. presidential election results.
+
+My findings indicate that LASSO logistic regression and random forest are very effective at predicting donation behavior. LASSO logistic regression correctly classifies 82.7 percent of test cases and random forest correctly classifies 92.8 percent of test cases. Both of these accuracy scores are notably higher than the 74.1 percent no information rate. Nevertheless, LASSO logistic regression is only able to correctly classify 61.9 percent of positive cases. Remarkably, however, random forest correctly classifies 99.9 percent of positive classes, which indicates that it is the superior model by far. As a result, I conclude that random forest is an extremely effective method for predicting campaign behavior. 
+
+For the complete code for the project, see `data_analyses.Rmd`. For a detailed walkthrough of the project, please see `pangakis_donation_pred_rf.pdf`.
